@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=20261126c">
+<link rel="stylesheet" href="assets/css/style.css?v=20261126d">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/img/logo/emblema-64.png">
 <link rel="apple-touch-icon" href="assets/img/logo/emblema-192.png">
 
@@ -298,7 +298,7 @@
     <header class="secao__cab">
       <p class="etiqueta">Jogos</p>
       <h2>Brinque de guardião</h2>
-      <p class="secao__lead">Dois jogos rápidos sobre temas que o projeto liga às outras ações de Miranda: a prevenção de incêndios e o caminho da água entre a vegetação, o solo e os córregos.</p>
+      <p class="secao__lead">Dois jogos rápidos sobre temas do caderno: a prevenção de incêndios e as aves de Miranda, com as ameaças que elas enfrentam.</p>
     </header>
 
     <div class="jogos">
@@ -339,58 +339,45 @@
         <p class="jogo__saiba"><b>No caderno:</b> a Parte 3, Fogo e áreas protegidas, mostra que, na REBIO, a Fundação Neotrópica forma uma brigada comunitária contra incêndios (FUNBIO, [s.d.]) e retoma a Campanha “Miranda Sem Fogo” (Ação 03). Segundo a campanha, o período de estiagem, entre julho e outubro, concentra o maior risco de incêndios na região, e entre as causas recorrentes estão as queimadas de manejo mal controladas, o descarte de bitucas de cigarro e a queima de resíduos domésticos.</p>
       </article>
 
-      <!-- GOTA -->
-      <article class="jogo" id="jogo-gota">
+      <!-- VOO -->
+      <article class="jogo" id="jogo-voo">
         <header class="jogo__cab">
-          <p class="jogo__tipo">Labirinto · 3 fases</p>
-          <h3>Trilha da Gota d’Água</h3>
-          <p>Leve a gota da nascente até o córrego pelo caminho com vegetação. Evite as áreas degradadas: ali a água escorre e leva terra.</p>
+          <p class="jogo__tipo">Voo sem fim · por pontuação</p>
+          <h3>Voo do Guardião</h3>
+          <p>Escolha sua ave e voe entre as árvores. Cada árvore vencida vale 1 ponto, e cada fruto também. Quanto mais longe, mais rápido fica, e chegam o fogo na mata, as redes de captura e o gavião.</p>
         </header>
         <div class="jogo__ctrl">
-          <div class="nivel" role="radiogroup" aria-label="Dificuldade">
-            <button type="button" role="radio" data-jogo="gota" data-nivel="facil" aria-checked="false">Fácil</button>
-            <button type="button" role="radio" data-jogo="gota" data-nivel="normal" aria-checked="true">Normal</button>
-            <button type="button" role="radio" data-jogo="gota" data-nivel="dificil" aria-checked="false">Difícil</button>
-          </div>
-          <button type="button" class="reiniciar" id="gota-reiniciar">↻ Reiniciar</button>
+          <button type="button" class="reiniciar" id="voo-pausa" hidden>❚❚ Pausar</button>
+          <button type="button" class="reiniciar" id="voo-reiniciar">⇄ Trocar de ave</button>
         </div>
-        <div class="placar" aria-live="polite">
-          <span><small>Fase</small><b id="gota-fase">1 de 3</b></span>
-          <span><small>Passos</small><b id="gota-passos">0</b></span>
-          <span><small>Terra arrastada</small><b id="gota-sed">0</b></span>
+        <div class="placar placar--4">
+          <span><small>Pontos</small><b id="voo-pontos">0</b></span>
+          <span><small>Recorde</small><b id="voo-recorde">0</b></span>
+          <span><small>Frutos</small><b id="voo-frutos">0</b></span>
+          <span><small>Fase</small><b id="voo-fase" class="placar__txt">Mata calma</b></span>
         </div>
-        <div class="extra" id="gota-extra" hidden>
-          <span class="extra__item"><small>Barrento</small><b id="gota-vilao">dormindo</b></span>
-          <span class="extra__item"><small>Mudas plantadas</small><b id="gota-mudas">0</b></span>
-          <span class="extra__item"><small>Alcançada</small><b id="gota-pegos">0</b></span>
-        </div>
-        <div class="palco palco--gota" id="gota-palco" tabindex="0" aria-label="Labirinto da gota d'água. Use as setas do teclado ou os botões para mover a gota.">
-          <canvas id="gota-canvas"></canvas>
-          <p class="palco__aviso" id="gota-aviso" hidden></p>
-          <div class="palco__capa" id="gota-capa">
-            <p class="palco__titulo" id="gota-titulo">Da nascente ao córrego</p>
-            <p id="gota-msg">Use as setas do teclado, deslize o dedo no labirinto ou toque nos botões abaixo.</p>
-            <button type="button" class="botao" id="gota-iniciar">Começar</button>
+        <div class="palco palco--voo" id="voo-palco" tabindex="0" aria-label="Jogo Voo do Guardião. Toque, clique ou aperte espaço para a ave bater as asas.">
+          <canvas id="voo-canvas"></canvas>
+          <div class="palco__capa voo-capa" id="voo-capa">
+            <p class="palco__titulo" id="voo-titulo">Escolha sua ave</p>
+            <p id="voo-msg">Voe entre as árvores, pegue frutos e escape do fogo, das redes de captura e do gavião.</p>
+            <div class="voo-aves" id="voo-aves" role="group" aria-label="Aves para escolher"></div>
+            <p class="voo-curio" id="voo-curio"></p>
+            <button type="button" class="botao" id="voo-iniciar">Voar</button>
           </div>
         </div>
-        <div class="dpad" role="group" aria-label="Mover a gota">
-          <button type="button" data-dir="cima" aria-label="Para cima">▲</button>
-          <button type="button" data-dir="esq" aria-label="Para a esquerda">◀</button>
-          <button type="button" data-dir="baixo" aria-label="Para baixo">▼</button>
-          <button type="button" data-dir="dir" aria-label="Para a direita">▶</button>
-        </div>
-        <ul class="legenda-jogo" aria-label="Legenda">
-          <li><span class="sw sw--nascente"></span>Nascente</li>
-          <li><span class="sw sw--mata"></span>Vegetação</li>
-          <li><span class="sw sw--degradada"></span>Área degradada</li>
-          <li><span class="sw sw--corrego"></span>Córrego</li>
-          <li class="so-dificil" hidden><span class="sw sw--vilao"></span>Barrento</li>
-          <li class="so-dificil" hidden><span class="sw sw--muda"></span>Muda</li>
+        <p class="ticker" id="voo-ticker" aria-live="polite">Escolha uma ave e toque em Voar.</p>
+        <ul class="legenda-jogo" aria-label="Fases">
+          <li><b>0</b> Mata calma</li>
+          <li><b>6</b> Fogo na mata</li>
+          <li><b>14</b> Redes de captura</li>
+          <li><b>22</b> Gavião</li>
+          <li><b>32</b> Tudo junto</li>
         </ul>
-        <p class="jogo__saiba"><b>Para saber mais:</b> o projeto se articula com a Campanha “Água é Vida” (Ação 07), que relaciona vegetação, solo e disponibilidade de água. Segundo a campanha, a água depende de um ciclo integrado de chuva, vegetação, nascentes, córregos e rios, e a falta de vegetação na beira dos rios favorece o transporte de sedimentos.</p>
+        <p class="jogo__saiba"><b>No caderno:</b> as aves comem frutos e espalham sementes, ajudando a nascer novas plantas (Parte 2). O fogo destrói o abrigo e o alimento delas (Parte 3), e tirar ave da natureza é proibido: apanhar animal silvestre sem permissão é crime (Lei nº 9.605/1998, art. 29). Curiosidades das aves: WikiAves.</p>
       </article>
     </div>
-    <p class="nota">Fontes: Projeto “Guardiões da Biodiversidade”, NOVAeng (2026); Campanhas “Miranda Sem Fogo” e “Água é Vida”, NOVAeng (2026).</p>
+    <p class="nota">Fontes: Caderno dos Guardiões da Biodiversidade, NOVAeng (2026); Campanha “Miranda Sem Fogo”, Prefeitura de Miranda (2026); BRASIL, Lei nº 9.605/1998.</p>
   </div>
 </section>
 
@@ -658,7 +645,8 @@
 <script src="assets/js/aves.js?v=20261126c"></script>
 <script src="assets/js/main.js?v=20261126c"></script>
 <script src="assets/js/projetos.js?v=20261126c"></script>
-<script src="assets/js/jogos.js?v=20261126c"></script>
+<script src="assets/js/jogos.js?v=20261126d"></script>
+<script src="assets/js/voo.js?v=20261126d"></script>
 <script src="assets/js/memoria.js?v=20261126c"></script>
 
 </body></html>

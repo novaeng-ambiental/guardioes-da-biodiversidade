@@ -529,3 +529,22 @@ p { margin: 0; }
 .mem__nav--ant { left: 14px; } .mem__nav--prox { right: 14px; }
 .mem__lupa .lupa__fechar { position: fixed; top: calc(14px + env(safe-area-inset-top, 0px)); right: 14px; }
 .mem__lupa .lupa__fechar { background: #fff; margin: 0; border-color: #fff; }
+
+/* ---------- Voo do Guardião ---------- */
+.palco--voo { background: #A8DDF0; touch-action: none; outline: none; }
+.palco--voo:focus-visible { outline: 3px solid var(--sol); outline-offset: 2px; }
+.voo-capa { display: flex; flex-direction: column; align-items: center; overflow-y: auto; padding: 16px 14px; gap: 8px; background: rgba(12, 38, 30, 0.93); }
+.voo-capa > * { flex-shrink: 0; }
+.voo-capa .botao { margin-top: 2px; }
+.voo-capa > p:not(.palco__titulo) { font-size: .88rem; }
+.voo-aves { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; width: 100%; max-width: 420px; }
+.voo-ave { display: grid; gap: 2px; padding: 6px; border-radius: 12px; border: 2px solid rgba(255,255,255,.35); background: rgba(255,255,255,.12); color: #fff; cursor: pointer; text-align: center; transition: transform .15s, border-color .15s, background .15s; }
+.voo-ave img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 8px; }
+.voo-ave b { font-family: var(--f-titulo); font-size: .82rem; line-height: 1.1; margin-top: 3px; }
+.voo-ave i { font-size: .66rem; opacity: .8; line-height: 1.1; }
+.voo-ave:hover { transform: translateY(-2px); }
+.voo-ave[aria-pressed="true"] { border-color: var(--sol); background: rgba(242,183,5,.22); box-shadow: 0 0 0 3px rgba(242,183,5,.35); }
+.voo-curio { font-size: .8rem !important; max-width: 46ch; opacity: .92; min-height: 2.4em; }
+.placar__txt { font-size: 1rem !important; line-height: 1.5 !important; }
+#jogo-voo .legenda-jogo b { font-family: var(--f-dado); color: var(--verde-txt); }
+@media (max-width: 480px) { .voo-ave i { display: none; } .voo-ave b { font-size: .74rem; } .voo-capa #voo-msg { font-size: .8rem; } .voo-curio { display: none; } }
