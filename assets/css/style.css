@@ -503,11 +503,22 @@ p { margin: 0; }
 
 /* ---------- memória com fotos ---------- */
 .mem__filtros { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
-.mem__grade { list-style: none; margin: 0; padding: 0; columns: 4 220px; column-gap: 12px; }
-.mem__grade li { break-inside: avoid; margin-bottom: 12px; }
-.mem__foto { display: block; width: 100%; padding: 0; border: 0; border-radius: 10px; overflow: hidden; cursor: zoom-in; background: var(--linha); }
-.mem__foto img { width: 100%; height: auto; transition: transform .4s ease; }
-.mem__foto:hover img { transform: scale(1.04); }
+.mem__palco { position: relative; background: #0B2A22; border-radius: 16px; overflow: hidden; }
+.mem__principal { display: block; width: 100%; padding: 0; border: 0; background: #0B2A22; cursor: zoom-in; }
+.mem__principal img { width: 100%; height: clamp(280px, 56vh, 560px); object-fit: contain; transition: opacity .25s ease; }
+.mem__principal img.troca { opacity: 0; }
+.mem__seta { position: absolute; top: calc(50% - 26px); transform: translateY(-50%); width: 48px; height: 48px; border-radius: 50%; border: 0; background: rgba(255,255,255,.18); color: #fff; font-size: 2rem; line-height: 1; cursor: pointer; }
+.mem__seta:hover { background: var(--verde); }
+.mem__seta--ant { left: 12px; } .mem__seta--prox { right: 12px; }
+.mem__legenda { margin: 0; padding: 12px 18px; color: #E7F3EE; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: .95rem; }
+.mem__legenda b { font-family: var(--f-dado); font-weight: 400; color: #A9CBBE; }
+.mem__grade { list-style: none; margin: 12px 0 0; padding: 4px 2px 10px; display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: thin; }
+.mem__grade li { flex: none; scroll-snap-align: start; }
+.mem__foto { display: block; width: 92px; height: 92px; padding: 0; border: 3px solid transparent; border-radius: 10px; overflow: hidden; cursor: pointer; background: var(--linha); opacity: .7; transition: opacity .2s, border-color .2s; }
+.mem__foto img { width: 100%; height: 100%; object-fit: cover; }
+.mem__foto:hover { opacity: 1; }
+.mem__foto[aria-current="true"] { border-color: var(--verde); opacity: 1; }
+@media (max-width: 600px) { .mem__foto { width: 72px; height: 72px; } .mem__seta { width: 40px; height: 40px; } .mem__principal img { height: min(100vw, 52vh); } }
 .mem__lupa { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; overflow: visible; }
 .mem__lupa::backdrop { background: rgba(3, 15, 11, .9); }
 .mem__lupa figure { margin: 0; display: grid; gap: 10px; justify-items: center; }

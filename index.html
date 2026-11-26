@@ -445,7 +445,15 @@
       <button type="button" class="chip" data-mem="desenhos" aria-pressed="false">Desenhos</button>
       <button type="button" class="chip" data-mem="mural" aria-pressed="false">Mural</button>
     </div>
-    <ul class="mem__grade" id="mem-grade">
+    <div class="mem__palco">
+      <button type="button" class="mem__principal" id="mem-principal" aria-label="Ampliar foto">
+        <img id="mem-principal-img" src="assets/img/acao/palestra.webp" alt="" width="1280" height="960">
+      </button>
+      <button type="button" class="mem__seta mem__seta--ant" id="mem-p-ant" aria-label="Foto anterior">‹</button>
+      <button type="button" class="mem__seta mem__seta--prox" id="mem-p-prox" aria-label="Próxima foto">›</button>
+      <p class="mem__legenda"><span id="mem-principal-leg"></span> <b id="mem-contador"></b></p>
+    </div>
+    <ul class="mem__grade" id="mem-grade" aria-label="Miniaturas das fotos">
       <li data-cat="palestra"><button type="button" class="mem__foto" data-leg="Palestra em sala de aula, 16/11/2026."><img src="assets/img/acao/palestra.webp" alt="Apresentação da palestra na sala de aula, com slides projetados." width="1280" height="960" loading="lazy"></button></li>
       <li data-cat="artes"><button type="button" class="mem__foto" data-leg="A turma com os desenhos da aula de artes “Minha ave favorita”."><img src="assets/img/acao/turma-desenhos.webp" alt="A turma reunida na sala, mostrando os desenhos de aves." width="1280" height="720" loading="lazy"></button></li>
       <li data-cat="mural"><button type="button" class="mem__foto" data-leg="Galeria dos Guardiões da Biodiversidade no mural da escola."><img src="assets/img/acao/mural-01.webp" alt="Mural “Aves do Pantanal” com os desenhos da turma." width="1124" height="1400" loading="lazy"></button></li>
@@ -476,7 +484,7 @@
       <li data-cat="desenhos"><button type="button" class="mem__foto" data-leg="Desenho da aula de artes “Minha ave favorita”, com características da ave escolhida."><img src="assets/img/acao/desenho-13.webp" alt="Desenho de ave feito por estudante, com anotações." width="720" height="1280" loading="lazy"></button></li>
       <li data-cat="desenhos"><button type="button" class="mem__foto" data-leg="Desenho da aula de artes “Minha ave favorita”, com características da ave escolhida."><img src="assets/img/acao/desenho-14.webp" alt="Desenho de ave feito por estudante, com anotações." width="720" height="1280" loading="lazy"></button></li>
     </ul>
-    <p class="nota">Registro fotográfico do projeto Guardiões da Biodiversidade, Escola Municipal Waldemar João de Souza, Miranda/MS, novembro de 2026. Toque na foto para ampliar.</p>
+    <p class="nota">Registro fotográfico do projeto Guardiões da Biodiversidade, Escola Municipal Waldemar João de Souza, Miranda/MS, novembro de 2026. Toque na foto grande para ampliar e deslize as miniaturas para ver as outras.</p>
   </div>
 </section>
 
