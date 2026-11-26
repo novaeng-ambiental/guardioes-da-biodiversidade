@@ -4,10 +4,10 @@
   'use strict';
   var PROJETOS = [
     { acao: '02', tipo: 'Projeto', titulo: 'Guardiões do Pantanal de Miranda', tema: 'Formação de professores como multiplicadores de educação ambiental, com microprojetos das turmas e vivência em área protegida.', url: null },
-    { acao: '03', tipo: 'Campanha', titulo: 'Miranda Sem Fogo', tema: 'Prevenção a queimadas e proteção das Unidades de Conservação e Terras Indígenas.', url: null },
+    { acao: '03', tipo: 'Campanha', titulo: 'Miranda Sem Fogo', tema: 'Prevenção a queimadas e proteção das Unidades de Conservação e Terras Indígenas.', url: 'https://novaeng-ambiental.github.io/miranda-sem-fogo/' },
     { acao: '07', tipo: 'Campanha', titulo: 'Água é Vida', tema: 'Conscientização sobre os recursos hídricos e as áreas úmidas da Bacia do Rio Miranda.', url: null },
     { acao: '08', tipo: 'Projeto', titulo: 'Escola no Pantanal', tema: 'Trilhas interpretativas e visitação educativa na RPPN Dona Aracy.', url: null },
-    { acao: '10', tipo: 'Projeto', titulo: 'Guardiões da Biodiversidade', tema: 'Unidades de Conservação e observação de aves na REBIO.', url: '#inicio', atual: true },
+    { acao: '10', tipo: 'Projeto', titulo: 'Guardiões da Biodiversidade', tema: 'Unidades de Conservação e aves de Miranda, em sala de aula.', url: '#inicio', atual: true },
     { acao: '11', tipo: 'Ação pontual', titulo: 'Semana do Pantanal 2026: Achou um Bicho?', tema: 'Convivência com a fauna silvestre: o que fazer ao encontrar um animal silvestre.', url: null },
     { acao: '12', tipo: 'Ação pontual', titulo: 'Plantas nativas, exóticas e invasoras: qual é a diferença?', tema: 'Publicação digital sobre plantas nativas, exóticas e exóticas invasoras.', url: null },
     { acao: '13', tipo: 'Ação pontual', titulo: 'Mito ou verdade? Áreas protegidas de Miranda', tema: 'Publicação digital sobre Unidades de Conservação e Terras Indígenas.', url: null }

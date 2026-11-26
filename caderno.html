@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Caderno dos Guardiões da Biodiversidade</title>
+<meta name="description" content="Caderno dos Guardiões da Biodiversidade em versão digital para folhear: o material da turma do 7º ano na palestra e na aula de artes em Miranda/MS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Caveat:wght@500;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/caderno.css">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/img/logo/emblema-64.png">
+</head>
+<body>
+
+<header class="barra">
+  <a class="barra__voltar" href="index.html" aria-label="Voltar ao site do projeto">
+    <img src="assets/img/logo/logo-guardioes.webp" alt="" width="40" height="40">
+    <span><b>Caderno dos Guardiões</b><small>da Biodiversidade</small></span>
+  </a>
+  <div class="barra__prog" role="status" aria-live="polite" title="Atividades começadas neste aparelho">
+    <span class="barra__prog-txt"><b id="prog-n">0</b>/9 atividades</span>
+    <span class="barra__prog-trilho"><span id="prog-barra"></span></span>
+  </div>
+  <div class="barra__acoes">
+    <button type="button" class="bt-barra" id="abrir-sumario" aria-haspopup="dialog">☰ <span>Sumário</span></button>
+    <a class="bt-barra bt-barra--sair" href="index.html" aria-label="Sair do caderno e voltar ao site">✕ <span>Sair do caderno</span></a>
+  </div>
+</header>
+
+<main class="mesa">
+  <p class="dica" id="dica">Arraste a ponta da página, use as setas ou deslize o dedo para folhear.</p>
+
+  <div class="palco-livro" id="palco">
+    <button type="button" class="seta seta--esq" id="ant" aria-label="Página anterior">‹</button>
+    <div class="livro" id="livro">
+
+<!-- 1 CAPA -->
+<div class="page pg-capa" data-density="hard" data-nome="Capa">
+  <div class="capa">
+    <p class="capa__selo">Miranda/MS · 7º ano</p>
+    <h1 class="capa__tit">Caderno dos Guardiões <span>da Biodiversidade</span></h1>
+    <p class="capa__sub">Unidades de Conservação e aves de Miranda</p>
+    <img class="capa__arte" src="assets/img/caderno/capa.webp" alt="Colagem com aves do Pantanal em círculos: tuiuiús na água ao centro e, em volta, tucano-toco, arara-azul, bem-te-vi, arara-vermelha, coruja-buraqueira e outras aves." width="1400" height="1313">
+    <div class="capa__logos">
+      <img src="assets/img/logos/semarh.webp" alt="SEMARH Miranda"><img src="assets/img/logos/comdema.webp" alt="COMDEMA Miranda"><img src="assets/img/logos/novaeng.webp" alt="NOVAeng" class="largo"><img src="assets/img/logos/neotropica.webp" alt="Fundação Neotrópica do Brasil">
+    </div>
+    <p class="capa__cred">Fotos da capa: Fundação Neotrópica do Brasil (2026). Guia Fotográfico Aves do Mato Grosso do Sul. Créditos fotográficos: Breenda Rezende, Fernando de Almeida, Guilherme Dalponti, Jéssica Prestes e Meryelle Oliveira.</p>
+  </div>
+</div>
+
+<!-- 2 GRUPO -->
+<div class="page" data-nome="Este caderno pertence ao grupo">
+  <div class="pg">
+    <h2 class="tit-pag">Este caderno <small>pertence ao grupo:</small></h2>
+    <div class="ficha-grupo">
+      <label><span>Nome do grupo</span><input type="text" data-salvar="grupo-nome" class="mao" autocomplete="off"></label>
+      <p class="ficha-grupo__rot">Guardiões</p>
+      <label><span>1.</span><input type="text" data-salvar="grupo-g1" class="mao" autocomplete="off" aria-label="Guardião 1"></label>
+      <label><span>2.</span><input type="text" data-salvar="grupo-g2" class="mao" autocomplete="off" aria-label="Guardião 2"></label>
+      <label><span>3.</span><input type="text" data-salvar="grupo-g3" class="mao" autocomplete="off" aria-label="Guardião 3"></label>
+      <label><span>4.</span><input type="text" data-salvar="grupo-g4" class="mao" autocomplete="off" aria-label="Guardião 4"></label>
+      <p><span>Escola</span><b>Escola Municipal Waldemar João de Souza</b></p>
+      <p><span>Turma</span><b>7º ano · período matutino</b></p>
+      <label><span>Datas</span><input type="text" data-salvar="grupo-datas" class="mao" autocomplete="off"></label>
+    </div>
+    <p class="nota-salvo">O que vocês escrevem fica guardado só neste aparelho.</p>
+  </div>
+</div>
+
+<!-- 3 CRÉDITOS -->
+<div class="page" data-nome="Créditos">
+  <div class="pg pg--creditos">
+    <dl class="creditos">
+      <div><dt>Realização</dt><dd>Prefeitura de Miranda, por meio da Secretaria Municipal de Meio Ambiente e Recursos Hídricos (SEMARH), órgão gestor da REBIO.</dd></div>
+      <div><dt>Parceria</dt><dd>Conselho Municipal de Meio Ambiente (COMDEMA) e Fundação Neotrópica do Brasil, com o apoio da Secretaria Municipal de Educação de Miranda.</dd></div>
+      <div><dt>Elaboração</dt><dd>NOVAeng Engenharia Ltda.</dd></div>
+      <div><dt>Fotografias</dt><dd>Fundação Neotrópica do Brasil, Guia Fotográfico Aves do Mato Grosso do Sul. Créditos fotográficos do guia: Breenda Rezende, Fernando de Almeida, Guilherme Dalponti, Jéssica Prestes e Meryelle Oliveira. Parque Nacional do Juruena: Rafael Mitsuo (2024), CC BY-SA 4.0, Wikimedia Commons.</dd></div>
+      <div><dt>Ilustrações</dt><dd>Ícones e colagem da capa: NOVAeng Engenharia Ltda.</dd></div>
+    </dl>
+  </div>
+</div>
+
+<!-- 4 GLOSSÁRIO -->
+<div class="page" data-nome="Glossário de siglas">
+  <div class="pg">
+    <h2 class="tit-pag">Glossário <small>de siglas</small></h2>
+    <dl class="glossario">
+      <div><dt>CEUC</dt><dd>Cadastro Estadual de Unidades de Conservação</dd></div>
+      <div><dt>COMDEMA</dt><dd>Conselho Municipal de Meio Ambiente</dd></div>
+      <div><dt>FUNBIO</dt><dd>Fundo Brasileiro para a Biodiversidade</dd></div>
+      <div><dt>ha</dt><dd>hectare, unidade de medida de área</dd></div>
+      <div><dt>Ibama</dt><dd>Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</dd></div>
+      <div><dt>ICMBio</dt><dd>Instituto Chico Mendes de Conservação da Biodiversidade</dd></div>
+      <div><dt>IMASUL</dt><dd>Instituto de Meio Ambiente de Mato Grosso do Sul</dd></div>
+      <div><dt>MS</dt><dd>Mato Grosso do Sul</dd></div>
+      <div><dt>Prevfogo</dt><dd>Centro Nacional de Prevenção e Combate aos Incêndios Florestais, do Ibama</dd></div>
+      <div><dt>REBIO</dt><dd>Reserva Biológica</dd></div>
+      <div><dt>RPPN</dt><dd>Reserva Particular do Patrimônio Natural</dd></div>
+      <div><dt>SEMARH</dt><dd>Secretaria Municipal de Meio Ambiente e Recursos Hídricos</dd></div>
+      <div><dt>SNUC</dt><dd>Sistema Nacional de Unidades de Conservação da Natureza</dd></div>
+      <div><dt>UC</dt><dd>Unidade de Conservação</dd></div>
+    </dl>
+  </div>
+</div>
+
+<!-- 5 SUMÁRIO -->
+<div class="page" data-nome="Sumário">
+  <div class="pg">
+    <h2 class="tit-pag">Sumário</h2>
+    <ol class="sumario-pag" id="sumario-pag"></ol>
+    <div class="trio">
+      <img src="assets/img/aves/arara-vermelha.webp" alt="Arara-vermelha" class="livre zoom">
+      <img src="assets/img/caderno/vista-aerea.webp" alt="Vista aérea de vegetação" class="livre zoom">
+      <img src="assets/img/aves/joao-de-barro.webp" alt="João-de-barro" class="livre zoom">
+    </div>
+    <p class="cred">Arara-vermelha, vista aérea de vegetação e joão-de-barro. Fotos: Fundação Neotrópica do Brasil (2026). Guia Fotográfico Aves do Mato Grosso do Sul. Créditos fotográficos: Breenda Rezende, Fernando de Almeida, Guilherme Dalponti, Jéssica Prestes e Meryelle Oliveira.</p>
+  </div>
+</div>
+
+<!-- 6 APRESENTAÇÃO -->
+<div class="page" data-nome="Apresentação" data-cap="Apresentação">
+  <div class="pg">
+    <h2 class="tit-pag">Apresentação <small>para que serve este caderno?</small></h2>
+    <p class="balao">Este caderno vai acompanhar vocês na palestra e na aula de artes</p>
+    <p>Olá, Guardiões da Biodiversidade! Este caderno é de vocês. Ele vai acompanhá-los na palestra em sala de aula e na aula de artes, para conhecer as Unidades de Conservação e as aves de Miranda.</p>
+    <ul class="partes-lista">
+      <li class="c1"><b>Parte 1. Unidades de Conservação de Miranda:</b> o que é uma UC, os tipos de UC, a REBIO e a RPPN Dona Aracy.</li>
+      <li class="c2"><b>Parte 2. Aves de Miranda:</b> o papel das aves, como observar, como identificar uma ave pelas partes do corpo e a Galeria de aves.</li>
+      <li class="c3"><b>Parte 3. Fogo e áreas protegidas:</b> o que é incêndio, queima controlada e manejo do fogo, quem protege as UCs de Miranda do fogo e a campanha Miranda Sem Fogo.</li>
+    </ul>
+    <p class="mao-txt">Façam a lápis e conversem no grupo antes de responder: o caderno é de todos.</p>
+  </div>
+</div>
+
+<!-- 7 JORNADA + COMBINADOS -->
+<div class="page" data-nome="Jornada e combinados">
+  <div class="pg">
+    <figure class="fig livre">
+      <img src="assets/img/caderno/jornada.webp" alt="A jornada do Guardião em três passos: 1, 16/11, em sala: palestra sobre Unidades de Conservação, a REBIO e as aves de Miranda; 2, 17/11, aula de artes: Minha ave favorita; 3, depois, na escola: Galeria dos Guardiões da Biodiversidade no mural da escola." class="zoom">
+      <figcaption><b>Figura 1. A jornada do Guardião: palestra, aula de artes e galeria</b> Elaboração: NOVAeng (2026).</figcaption>
+    </figure>
+    <div class="combinados">
+      <img src="assets/img/caderno/icone-combinados.webp" alt="" width="64" height="64">
+      <div>
+        <h3>Combinados de Guardiões</h3>
+        <p>Guardiões da Biodiversidade cuidam da natureza em todo lugar: na escola, em casa e nas áreas protegidas, que têm regras próprias para proteger a natureza (Brasil, 2000). Por isso, na palestra e na aula de artes:</p>
+        <ul class="caixinhas">
+          <li><label><input type="checkbox" data-salvar="comb-1"><span>ouçam com atenção, levantem a mão e esperem a vez de cada colega falar;</span></label></li>
+          <li><label><input type="checkbox" data-salvar="comb-2"><span>trabalhem juntos e ajudem os colegas: o caderno é do grupo, e todos participam;</span></label></li>
+          <li><label><input type="checkbox" data-salvar="comb-3"><span>observem a natureza sem arrancar plantas nem levar sementes, penas, ninhos ou animais;</span></label></li>
+          <li><label><input type="checkbox" data-salvar="comb-4"><span>cuidem da escola: resíduo vai para a lixeira;</span></label></li>
+          <li><label><input type="checkbox" data-salvar="comb-5"><span>nunca tentem pegar, alimentar ou assustar um animal.</span></label></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 8 ATIVIDADE 1 -->
+<div class="page" data-nome="Atividade 1">
+  <div class="pg">
+    <section class="ativ" data-ativ="1">
+      <h3 class="ativ__tit"><span>Atividade 1</span> Combinado da turma</h3>
+      <p>Depois da conversa com a equipe do projeto, escrevam aqui mais um combinado que vocês acham importante para a palestra e a aula de artes:</p>
+      <textarea class="pauta" rows="6" data-salvar="a1" aria-label="Combinado da turma"></textarea>
+    </section>
+    <img class="selo-ave" src="assets/img/aves/bem-te-vi.webp" alt="" aria-hidden="true">
+  </div>
+</div>
+
+<!-- 9 DIVISÓRIA PARTE 1 -->
+<div class="page pg-div pg-div--1" data-nome="Parte 1. Unidades de Conservação de Miranda" data-cap="Parte 1. Unidades de Conservação de Miranda" data-parte="1">
+  <div class="pg">
+    <p class="div__n">Parte 1.</p>
+    <h2 class="div__tit">Unidades de Conservação de Miranda</h2>
+    <blockquote class="lei">
+      <p><b>Unidade de conservação:</b> espaço territorial e seus recursos ambientais, incluindo as águas jurisdicionais, com características naturais relevantes, legalmente instituído pelo Poder Público, com objetivos de conservação e limites definidos, sob regime especial de administração, ao qual se aplicam garantias adequadas de proteção.</p>
+      <cite>Lei nº 9.985/2000, art. 2º, inc. I</cite>
+    </blockquote>
+  </div>
+</div>
+
+<!-- 10 O QUE É UC -->
+<div class="page" data-parte="1" data-nome="O que é uma Unidade de Conservação?">
+  <div class="pg">
+    <h3 class="h-sec">O que é uma Unidade de Conservação?</h3>
+    <p>Em outras palavras: uma Unidade de Conservação (UC) é uma área criada oficialmente pelo poder público, com limites definidos, para proteger a natureza que existe nela, e que funciona com regras especiais de uso (Brasil, 2000, art. 2º, inc. I).</p>
+    <p>No Brasil, as UCs fazem parte do Sistema Nacional de Unidades de Conservação da Natureza, o SNUC, criado pela Lei nº 9.985, de 18 de julho de 2000. O SNUC reúne as UCs federais, estaduais e municipais (Brasil, 2000, arts. 1º e 3º).</p>
+    <p>Entre os objetivos do SNUC estão manter a diversidade biológica, proteger as espécies ameaçadas de extinção, proteger e recuperar os recursos hídricos e favorecer a educação e a interpretação ambiental (Brasil, 2000, art. 4º, inc. I, II, VIII e XII).</p>
+    <div class="dupla-foto">
+      <figure class="polaroid livre"><img src="assets/img/caderno/juruena.webp" alt="Parque Nacional do Juruena: vista aérea de um rio entre a floresta ao pôr do sol." class="zoom"><figcaption>Parque Nacional do Juruena. Foto: Mitsuo (2024), CC BY-SA 4.0. Fonte: Wikimedia Commons.</figcaption></figure>
+      <figure class="polaroid polaroid--d livre"><img src="assets/img/aves/papagaio-verdadeiro.webp" alt="Papagaio-verdadeiro" class="zoom"><figcaption>Papagaio-verdadeiro (<i>Amazona aestiva</i>). Foto: Fundação Neotrópica do Brasil (2026). Guia Fotográfico Aves do Mato Grosso do Sul.</figcaption></figure>
+    </div>
+  </div>
+</div>
+
+<!-- 11 MAPA MENTAL -->
+<div class="page" data-parte="1" data-nome="Mapa mental">
+  <div class="pg">
+    <h3 class="h-sec">Mapa mental: Unidade de Conservação</h3>
+    <figure class="fig fig--alta livre">
+      <img src="assets/img/caderno/mapa-mental.webp" alt="Mapa mental: o que é uma UC, quem cria (federal, estadual, municipal), para que serve; os dois grupos, Proteção Integral e Uso Sustentável, com suas categorias; em Miranda, 1 Reserva Biológica municipal e 4 RPPNs." class="zoom">
+      <figcaption><b>Figura 2. Mapa mental: Unidade de Conservação</b> Fonte: Brasil (2000); IMASUL (2026). <em>Toque para ampliar.</em></figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- 12 ATIVIDADE 2 -->
+<div class="page" data-parte="1" data-nome="Atividade 2">
+  <div class="pg">
+    <section class="ativ" data-ativ="2">
+      <h3 class="ativ__tit"><span>Atividade 2</span> Proteção Integral ou Uso Sustentável?</h3>
+      <p>Leiam o que cada UC permite, pela Lei do SNUC, e marquem a qual grupo ela pertence. <b>Desafio:</b> escrevam o nome da categoria de UC.</p>
+      <ol class="escolhas" id="a2-lista"></ol>
+      <p class="placar" id="a2-placar" aria-live="polite"></p>
+    </section>
+  </div>
+</div>
+
+<!-- 13 UCs EM MIRANDA -->
+<div class="page" data-parte="1" data-nome="Unidades de Conservação em Miranda">
+  <div class="pg">
+    <h3 class="h-sec">Unidades de Conservação em Miranda</h3>
+    <p>O Cadastro Estadual de Unidades de Conservação, do Instituto de Meio Ambiente de Mato Grosso do Sul (IMASUL), registra estas UCs com área em Miranda (IMASUL, 2026):</p>
+    <table class="tab">
+      <thead><tr><th>Unidade de Conservação</th><th>Esfera</th><th>Grupo</th></tr></thead>
+      <tbody>
+        <tr class="destaque"><td>REBIO Marechal Cândido Mariano Rondon</td><td>Municipal</td><td>Proteção Integral</td></tr>
+        <tr><td>RPPN Fazenda Portal do Pantanal Sul I (Neivo Pires I)</td><td>Estadual</td><td>Uso Sustentável</td></tr>
+        <tr><td>RPPN Fazenda Portal do Pantanal Sul II (Neivo Pires II)</td><td>Estadual</td><td>Uso Sustentável</td></tr>
+        <tr><td>RPPN Estância Caiman (Dona Aracy)</td><td>Federal</td><td>Uso Sustentável</td></tr>
+        <tr><td>RPPN Ruth Paes Pires I</td><td>Federal</td><td>Uso Sustentável</td></tr>
+      </tbody>
+    </table>
+    <p class="cred">Categorias: Reserva Biológica (REBIO) e Reserva Particular do Patrimônio Natural (RPPNs). Fonte: IMASUL (2026). A RPPN Estância Caiman (Dona Aracy) tem área em Miranda e em Aquidauana.</p>
+    <figure class="fig">
+      <div class="barras" id="barras"></div>
+      <figcaption><b>Figura 3. Área das Unidades de Conservação em Miranda (hectares)</b> Fonte dos dados: IMASUL (2026). Para a RPPN Estância Caiman, só a parte em Miranda. Elaboração: NOVAeng (2026).</figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- 14 ATIVIDADE 3 -->
+<div class="page" data-parte="1" data-nome="Atividade 3">
+  <div class="pg">
+    <section class="ativ" data-ativ="3">
+      <h3 class="ativ__tit"><span>Atividade 3</span> Leiam o gráfico</h3>
+      <ol class="perguntas">
+        <li><p>a) Qual é a maior UC com área em Miranda? E a menor?</p><textarea class="pauta" rows="2" data-salvar="a3a" aria-label="Resposta a"></textarea>
+          <details class="resp"><summary>Ver resposta</summary><p>Maior: RPPN Estância Caiman (Dona Aracy), parte em Miranda, 4.010,4 ha. Menor: RPPN Ruth Paes Pires I, 20,7 ha.</p></details></li>
+        <li><p>b) Somem as áreas das cinco UCs. Quantos hectares de UC existem em Miranda?</p><textarea class="pauta" rows="1" data-salvar="a3b" aria-label="Resposta b"></textarea>
+          <details class="resp"><summary>Ver resposta</summary><p>4.010,4 + 868,5 + 320,1 + 119,5 + 20,7 = 5.339,2 ha.</p></details></li>
+        <li><p>c) A parte da RPPN Dona Aracy em Miranda é quantas vezes maior que a REBIO?</p><textarea class="pauta" rows="1" data-salvar="a3c" aria-label="Resposta c"></textarea>
+          <details class="resp"><summary>Ver resposta</summary><p>4.010,4 ÷ 868,5 ≈ 4,6 vezes.</p></details></li>
+        <li><p>d) Um campo de futebol oficial mede 105 m por 68 m: um pouco menos que 1 hectare. Mais ou menos quantos campos de futebol cabem na REBIO?</p><textarea class="pauta" rows="1" data-salvar="a3d" aria-label="Resposta d"></textarea>
+          <details class="resp"><summary>Ver resposta</summary><p>Um campo tem 105 × 68 = 7.140 m², ou 0,714 ha (1 ha = 10.000 m²). 868,5 ÷ 0,714 ≈ 1.216: cabem cerca de 1.200 campos de futebol na REBIO. Quem contou o campo como 1 hectare chegou a cerca de 870: a estimativa vale, mas o número real é maior, porque o campo tem menos de 1 hectare.</p></details></li>
+      </ol>
+    </section>
+  </div>
+</div>
+
+<!-- 15 A REBIO -->
+<div class="page" data-parte="1" data-nome="A REBIO de Miranda">
+  <div class="pg">
+    <h3 class="h-sec">A REBIO de Miranda</h3>
+    <p>Miranda tem uma Reserva Biológica municipal: a REBIO Marechal Cândido Mariano Rondon. Ela foi criada pelo Decreto nº 2.636, de 12 de dezembro de 2017, tem 868,5 hectares e é de domínio público, no grupo de Proteção Integral (IMASUL, 2026).</p>
+    <p>A REBIO é gerida pela Secretaria Municipal de Meio Ambiente e Recursos Hídricos (SEMARH).</p>
+    <figure class="fig livre">
+      <img src="assets/img/caderno/localizacao.webp" alt="Mapa de localização: o município de Miranda em verde no mapa de Mato Grosso do Sul e, ao lado, o limite do município com a sede, a cidade de Miranda." class="zoom">
+      <figcaption><b>Figura 4. Localização do município de Miranda e da sede do município</b> Base cartográfica: perímetros municipais e coordenada da sede municipal disponibilizados pelo IBGE. Elaboração: NOVAeng (2026).</figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- 16 A RESERVA BIOLÓGICA -->
+<div class="page" data-parte="1" data-nome="A Reserva Biológica">
+  <div class="pg">
+    <h3 class="h-sec">A Reserva Biológica</h3>
+    <figure class="polaroid polaroid--flutua livre"><img src="assets/img/aves/coruja-buraqueira.webp" alt="Coruja-buraqueira" class="zoom"><figcaption>Coruja-buraqueira (<i>Athene cunicularia</i>). Foto: Fundação Neotrópica do Brasil (2026). Guia Fotográfico Aves do Mato Grosso do Sul.</figcaption></figure>
+    <p>A Reserva Biológica é uma UC de Proteção Integral. O objetivo dela é proteger por completo os seres vivos e os outros elementos da natureza que existem dentro dos seus limites, sem interferência direta das pessoas e sem mudanças no ambiente. São permitidas apenas as ações para recuperar ambientes alterados e manter o equilíbrio natural, a biodiversidade e o funcionamento da natureza (Brasil, 2000, art. 10).</p>
+    <p>Na Reserva Biológica:</p>
+    <ul class="setas">
+      <li>a área pertence ao poder público (art. 10, § 1º);</li>
+      <li>a pesquisa científica só acontece com autorização do órgão que cuida da unidade (art. 10, § 3º).</li>
+    </ul>
+    <div class="postit">
+      <p class="postit__tit">A REBIO está em recuperação</p>
+      <p>A Fundação Neotrópica do Brasil trabalha para recuperar áreas alteradas da REBIO e forma uma brigada comunitária, com moradores do entorno, para combater incêndios (FUNBIO, [s.d.]).</p>
+    </div>
+  </div>
+</div>
+
+<!-- 17 ATIVIDADE 4 -->
+<div class="page" data-parte="1" data-nome="Atividade 4">
+  <div class="pg">
+    <section class="ativ" data-ativ="4">
+      <h3 class="ativ__tit"><span>Atividade 4</span> Ficha da REBIO</h3>
+      <p>Com base no texto da página anterior, completem a ficha.</p>
+      <div class="ficha-rebio" id="a4-ficha"></div>
+      <details class="resp"><summary>Ver a ficha preenchida</summary>
+        <p>REBIO Marechal Cândido Mariano Rondon · Miranda/MS · Reserva Biológica · Proteção Integral · Decreto nº 2.636, de 12 de dezembro de 2017 · 868,5 hectares · SEMARH (IMASUL, 2026; NOVAeng, 2026).</p>
+      </details>
+    </section>
+  </div>
+</div>
+
+<!-- 18 ATIVIDADE 5 -->
+<div class="page" data-parte="1" data-nome="Atividade 5">
+  <div class="pg">
+    <section class="ativ" data-ativ="5">
+      <h3 class="ativ__tit"><span>Atividade 5</span> Quem foi Marechal Rondon?</h3>
+      <p>A REBIO de Miranda leva o nome de Marechal Cândido Mariano Rondon, que vocês conheceram na palestra. Escrevam duas informações sobre ele que chamaram a atenção de vocês.</p>
+      <textarea class="pauta" rows="7" data-salvar="a5" aria-label="Informações sobre Marechal Rondon"></textarea>
+      <details class="resp"><summary>Relembrar a palestra</summary>
+        <p>Rondon nasceu em 1865, em Mimoso, hoje Santo Antônio de Leverger (MT). De 1892 a 1915, construiu linhas de telégrafo de Cuiabá ao Araguaia e de Cuiabá a Corumbá e, com a Comissão Rondon, trabalhou na Amazônia. Em 1910, foi o primeiro diretor do Serviço de Proteção ao Índio. Tinha o lema “Morrer se preciso for, matar nunca”. Morreu em 1958, no Rio de Janeiro, e é o Patrono das Comunicações do Brasil.</p>
+        <p>Em setembro de 1905, o então major Rondon mediu e demarcou a área da Vila de Miranda, o que hoje seria o perímetro urbano da cidade, e anotou croquis e cálculos na caderneta de campo, hoje guardada pela Agraer, em Campo Grande.</p>
+        <p class="cred">Fontes: Biblioteca Nacional (2018), Guia de coleções da Divisão de Manuscritos, p. 409-410; Correios, Museu Correios: Marechal Rondon; Agraer (2016); Santos (2025).</p>
+      </details>
+    </section>
+  </div>
+</div>
+
+<!-- 19 RPPN DONA ARACY -->
+<div class="page" data-parte="1" data-nome="A RPPN Dona Aracy">
+  <div class="pg">
+    <h3 class="h-sec">A RPPN Dona Aracy</h3>
+    <p>A RPPN Dona Aracy fica na Estância Caiman, na planície do Pantanal, a 36 km da cidade de Miranda. É uma área particular, protegida para sempre, criada em 2004. Ela tem 5.603,2 ha: 70,7% em Miranda e o restante em Aquidauana. O nome homenageia a Dra. Aracy Augusta Leme Klabin (Fibracon, 2022).</p>
+    <p>Lá já foram registradas 344 espécies de aves e 283 espécies de plantas. A onça-pintada pode ser vista até durante o dia, e a arara-azul, ameaçada de extinção, faz ninho no manduvi e come frutos de acuri e bocaiuva (Fibracon, 2022).</p>
+    <div class="numeros-pag">
+      <div><b>344</b><span>espécies de aves</span></div>
+      <div><b>283</b><span>espécies de plantas</span></div>
+    </div>
+    <figure class="polaroid polaroid--d livre"><img src="assets/img/aves/arara-azul.webp" alt="Arara-azul" class="zoom"><figcaption>Arara-azul (<i>Anodorhynchus hyacinthinus</i>). Foto: Fundação Neotrópica do Brasil (2026). Guia Fotográfico Aves do Mato Grosso do Sul.</figcaption></figure>
+  </div>
+</div>
+
+<!-- 20 ATIVIDADE 6 -->
+<div class="page" data-parte="1" data-nome="Atividade 6">
+  <div class="pg">
+    <section class="ativ" data-ativ="6">
+      <h3 class="ativ__tit"><span>Atividade 6</span> Liguem cada termo ao seu significado</h3>
+      <p>Os significados foram resumidos da Lei do SNUC (Brasil, 2000, art. 2º). Escolham o número do termo de cada significado.</p>
+      <ol class="termos"><li>Uso indireto</li><li>Plano de manejo</li><li>Zona de amortecimento</li><li>Corredor ecológico</li><li>Preservação</li></ol>
+      <ul class="ligar" id="a6-lista"></ul>
+      <div class="acoes"><button type="button" class="bt" data-conferir="a6">Conferir</button><span class="placar" id="a6-placar" aria-live="polite"></span></div>
+    </section>
+    <aside class="aprofundar">
+      <img src="assets/img/caderno/icone-lupa.webp" alt="" width="44" height="44">
+      <div><b>Para aprofundar</b><p>BRASIL. Lei nº 9.985, de 18 de julho de 2000 (Lei do SNUC). Texto integral no site da Câmara dos Deputados. IMASUL. Cadastro Estadual de Unidades de Conservação (CEUC), jan. 2026.</p></div>
+    </aside>
+  </div>
+</div>
+
+<!-- 21 DIVISÓRIA PARTE 2 -->
+<div class="page pg-div pg-div--2" data-nome="Parte 2. Aves de Miranda" data-cap="Parte 2. Aves de Miranda" data-parte="2">
+  <div class="pg">
+    <p class="div__n">Parte 2.</p>
+    <h2 class="div__tit">Aves de Miranda</h2>
+    <img class="div__ave livre zoom" src="assets/img/aves/tucano-toco.webp" alt="Tucano-toco">
+    <p class="cred cred--claro">Tucano-toco (<i>Ramphastos toco</i>). Foto: Fundação Neotrópica do Brasil (2026). Guia Fotográfico Aves do Mato Grosso do Sul.</p>
+  </div>
+</div>
+
+<!-- 22 PAPEL DAS AVES -->
+<div class="page" data-parte="2" data-nome="O papel das aves na natureza">
+  <div class="pg">
+    <h3 class="h-sec">O papel das aves na natureza</h3>
+    <p>As aves são muito importantes para o equilíbrio da natureza. Elas ajudam a espalhar sementes, podem participar da polinização das flores, contribuem para o controle de outros animais e fazem parte das cadeias alimentares. Observar aves também é uma forma de conhecer melhor a biodiversidade de Miranda e entender por que ela precisa ser protegida.</p>
+    <div class="cartas" id="cartas-papel">
+      <button type="button" class="carta"><img src="assets/img/caderno/papel-sementes.webp" alt="A ave come o fruto, voa e a semente vira uma nova planta."><b>1 Dispersão de sementes</b><span>Muitas aves comem frutos e ajudam a espalhar sementes. Quando se alimentam, elas podem levar sementes para outros lugares, contribuindo para o crescimento de novas plantas.</span></button>
+      <button type="button" class="carta"><img src="assets/img/caderno/papel-polinizacao.webp" alt="A ave leva pólen da flor 1 para a flor 2."><b>2 Polinização</b><span>Algumas aves ajudam na polinização. Ao visitar flores para se alimentar de néctar, elas podem carregar pólen de uma flor para outra, ajudando na reprodução das plantas.</span></button>
+      <button type="button" class="carta"><img src="assets/img/caderno/papel-controle.webp" alt="Uma ave come insetos e outra pega peixes."><b>3 Controle de populações</b><span>As aves também ajudam a controlar populações de outros seres vivos. Muitas se alimentam de insetos, pequenos animais, peixes ou outros organismos, contribuindo para o equilíbrio do ambiente.</span></button>
+      <button type="button" class="carta"><img src="assets/img/caderno/papel-cadeia.webp" alt="Cadeia alimentar: planta, inseto, ave e outro animal."><b>4 Cadeia alimentar</b><span>As aves fazem parte das cadeias alimentares. Elas podem ser consumidoras e também servir de alimento para outros animais. Isso mostra como todos os seres vivos estão conectados.</span></button>
+    </div>
+    <p class="cred"><b>Figura 5. O papel das aves na natureza.</b> Elaboração: NOVAeng (2026). Toquem em cada carta para ler.</p>
+  </div>
+</div>
+
+<!-- 23 SEIS PASSOS -->
+<div class="page" data-parte="2" data-nome="Os seis passos da observação">
+  <div class="pg">
+    <h3 class="h-sec">Os seis passos da observação de aves</h3>
+    <p>Observar aves é exercitar a paciência e a atenção. Imaginem que, um dia, vocês vão observar aves no pátio da escola ou perto de casa. Estes seriam os passos de um Guardião:</p>
+    <ol class="passos">
+      <li><b>Parem.</b> Fiquem em silêncio por alguns instantes e deixem o ambiente se acalmar.</li>
+      <li><b>Escutem.</b> Muitas aves são percebidas primeiro pelo canto. De onde vem o som?</li>
+      <li><b>Procurem.</b> Olhem para o chão, para os galhos, para o alto das árvores, para a água e para o céu.</li>
+      <li><b>Usem o binóculo, se tiverem.</b> Primeiro achem a ave a olho nu, sem tirar os olhos dela; depois levem o binóculo até os olhos.</li>
+      <li><b>Anotem na hora.</b> Cor do bico, das asas e da cauda, tamanho, o que a ave fazia e onde estava.</li>
+      <li><b>Comparem.</b> Usem a Galeria de aves deste caderno e a ajuda do professor para descobrir o nome da ave.</li>
+    </ol>
+    <p class="cred"><b>Figura 6. Os seis passos da observação de aves.</b> Elaboração: NOVAeng (2026).</p>
+  </div>
+</div>
+
+<!-- 24 COMO IDENTIFICAR -->
+<div class="page" data-parte="2" data-nome="Como identificar uma ave">
+  <div class="pg">
+    <h3 class="h-sec">Como identificar uma ave</h3>
+    <p>Para descobrir o nome de uma ave, observem as partes do corpo dela. O tamanho, o tipo de bico e as cores das penas ajudam a identificar a espécie, junto com o canto, o ambiente e o comportamento (Oliveira et al., 2011).</p>
+    <figure class="fig livre">
+      <img src="assets/img/caderno/partes-seriema.webp" alt="Seriema com as partes do corpo indicadas: topete, olho, pescoço, peito, pernas e pés, bico, asa (penas de voo: rêmiges) e cauda (penas: retrizes)." class="zoom">
+      <figcaption><b>Figura 7. Partes do corpo da ave, na seriema (<i>Cariama cristata</i>)</b> Foto: Fundação Neotrópica do Brasil (2026). Rótulos: NOVAeng (2026), com base em Oliveira et al. (2011) e ICMBio (2020).</figcaption>
+    </figure>
+    <p><b>Tamanho.</b> Comparem com uma ave que vocês conhecem bem, como o bem-te-vi, ou com a própria mão: menor, do mesmo tamanho ou maior.</p>
+  </div>
+</div>
+
+<!-- 25 PISTAS -->
+<div class="page" data-parte="2" data-nome="As pistas do corpo da ave">
+  <div class="pg">
+    <dl class="pistas">
+      <div><dt>Bico</dt><dd>O bico está ligado à alimentação. Bico curto, forte e curvo, como o de gaviões e corujas, corta a presa. Bico forte e curvo, como o de araras e papagaios, abre frutos e sementes duras. Bico curto em forma de cone quebra sementes. Bico longo e pontudo, como o das garças, pega peixes (Oliveira et al., 2011).</dd></div>
+      <div><dt>Penas e cores</dt><dd>Anotem a cor da cabeça, do peito, das asas e da cauda, e as manchas no corpo. As penas de voo da asa se chamam rêmiges, e as penas da cauda, retrizes (ICMBio, 2020).</dd></div>
+      <div><dt>Cauda</dt><dd>A cauda ajuda a direcionar o voo, e o formato dela muda de uma espécie para outra (Oliveira et al., 2011).</dd></div>
+      <div><dt>Pernas e pés</dt><dd>Dão pistas de onde a ave vive. As garças têm pernas longas para andar na água rasa; patos e biguás têm membrana entre os dedos para nadar; gaviões e corujas têm pernas fortes e unhas afiadas; a seriema tem pernas resistentes e é corredora (Oliveira et al., 2011).</dd></div>
+    </dl>
+    <figure class="polaroid polaroid--d livre"><img src="assets/img/aves/bem-te-vi.webp" alt="Bem-te-vi" class="zoom"><figcaption>Bem-te-vi (<i>Pitangus sulphuratus</i>). Foto: Fundação Neotrópica do Brasil (2026). Guia Fotográfico Aves do Mato Grosso do Sul.</figcaption></figure>
+  </div>
+</div>
+
+<!-- 26 ATIVIDADE 7 -->
+<div class="page" data-parte="2" data-nome="Atividade 7">
+  <div class="pg">
+    <section class="ativ" data-ativ="7">
+      <h3 class="ativ__tit"><span>Atividade 7</span> Detetives de aves</h3>
+      <p>Escolham três aves da Galeria de aves, nas próximas páginas. Observem a foto de cada uma e anotem as pistas que ajudam a reconhecer a espécie, usando as partes do corpo da Figura 7.</p>
+      <div class="detetives" id="a7"></div>
+    </section>
+  </div>
+</div>
+
+<!-- 27-30 GALERIA (preenchida pelo script) -->
+<div class="page" data-parte="2" data-nome="Galeria de aves" data-cap="Galeria de aves">
+  <div class="pg">
+    <h2 class="tit-pag">Galeria de aves <small>conheçam e marquem as que vocês já viram</small></h2>
+    <p class="gal-intro">As 40 aves estão no Guia Fotográfico Aves do Mato Grosso do Sul, da Fundação Neotrópica do Brasil. Usem as fotos na Atividade 7 e para escolher a ave da aula de artes. Marquem <b>V</b> se já viram e <b>O</b> se já ouviram a ave.</p>
+    <p class="gal-cont" data-gal-cont></p>
+    <ul class="gal" data-gal="0,8"></ul>
+  </div>
+</div>
+<div class="page" data-parte="2" data-nome="Galeria de aves (2)"><div class="pg"><ul class="gal" data-gal="8,20"></ul></div></div>
+<div class="page" data-parte="2" data-nome="Galeria de aves (3)"><div class="pg"><ul class="gal" data-gal="20,32"></ul></div></div>
+<div class="page" data-parte="2" data-nome="Galeria de aves (4)"><div class="pg"><ul class="gal" data-gal="32,40"></ul>
+  <p class="gal-cont" data-gal-cont></p>
+  <p class="cred">Fonte das fotos e dos nomes: Fundação Neotrópica do Brasil (2026). Créditos fotográficos do guia: Breenda Rezende, Fernando de Almeida, Guilherme Dalponti, Jéssica Prestes e Meryelle Oliveira.</p></div></div>
+
+<!-- 31 DIVISÓRIA PARTE 3 -->
+<div class="page pg-div pg-div--3" data-nome="Parte 3. Fogo e áreas protegidas" data-cap="Parte 3. Fogo e áreas protegidas" data-parte="3">
+  <div class="pg">
+    <p class="div__n">Parte 3.</p>
+    <h2 class="div__tit">Fogo e áreas protegidas</h2>
+    <p class="div__lema">Faça sua parte. Previna incêndios. Proteja vidas.</p>
+  </div>
+</div>
+
+<!-- 32 NEM TODO FOGO -->
+<div class="page" data-parte="3" data-nome="Nem todo fogo é igual">
+  <div class="pg">
+    <h3 class="h-sec">Nem todo fogo é igual</h3>
+    <p>Incêndio florestal é o fogo sem controle e sem planejamento que atinge a vegetação. Queima controlada é o uso do fogo planejado, monitorado e controlado, em área definida e em condições específicas. Manejo integrado do fogo é o planejamento que junta a prevenção, as queimas planejadas e o combate aos incêndios (Brasil, 2024, art. 2º).</p>
+    <p>Muitos incêndios começam com pequenos descuidos: bituca de cigarro jogada na vegetação, queimada mal controlada e queima de resíduos. Queimar resíduos a céu aberto é proibido (Brasil, 2010, art. 47, III). Quando o fogo passa, perdem-se plantas, animais e água, a produção rural e o turismo, a saúde e o ar limpo, e a cultura pantaneira (Prefeitura de Miranda, 2026).</p>
+    <figure class="fig livre">
+      <img src="assets/img/caderno/brigadistas.webp" alt="Dois brigadistas com equipamento de proteção combatem o fogo na vegetação, entre fumaça." class="zoom">
+      <figcaption><b>Figura 8. Brigadistas do Prevfogo/Ibama em ação contra o fogo na vegetação</b> Foto: Airton Pereira Sebastião/Prevfogo-Ibama (CC BY-SA 2.0), Wikimedia Commons.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- 33 FOGO NAS UCs + CAMPANHA -->
+<div class="page" data-parte="3" data-nome="O fogo e as UCs de Miranda">
+  <div class="pg">
+    <h3 class="h-sec">O fogo e as UCs de Miranda</h3>
+    <p>Na REBIO, a Fundação Neotrópica do Brasil forma uma brigada comunitária, com moradores do entorno, para combater incêndios (FUNBIO, [s.d.]). Na RPPN Dona Aracy, o Plano de Manejo prevê aceiros, faixas sem vegetação que ajudam a impedir a passagem do fogo, e ações de proteção e combate a incêndios (Fibracon, 2022).</p>
+    <div class="campanha">
+      <p class="campanha__tit">Campanha Miranda Sem Fogo</p>
+      <p class="campanha__lema">Faça sua parte. Previna incêndios. Proteja vidas.</p>
+      <p><b>Viu fogo?</b> Afastem-se e avisem um adulto.</p>
+      <ul class="fones">
+        <li><span>Corpo de Bombeiros</span><b>193</b></li>
+        <li><span>Polícia Militar</span><b>190</b></li>
+        <li><span>Disque Denúncia Estadual</span><b>181</b></li>
+        <li><span>Defesa Civil Estadual</span><b>(67) 99607-1525</b></li>
+        <li><span>Prefeitura de Miranda</span><b>(67) 3242-1508</b></li>
+      </ul>
+      <p class="cred cred--claro">Fonte: Prefeitura de Miranda (2026).</p>
+    </div>
+  </div>
+</div>
+
+<!-- 34 ATIVIDADE 8 -->
+<div class="page" data-parte="3" data-nome="Atividade 8">
+  <div class="pg">
+    <section class="ativ" data-ativ="8">
+      <h3 class="ativ__tit"><span>Atividade 8</span> Nem todo fogo é igual</h3>
+      <p>Liguem cada termo ao seu significado (Brasil, 2024; Prefeitura de Miranda, 2026).</p>
+      <ol class="termos"><li>Incêndio florestal</li><li>Queima controlada</li><li>Manejo integrado do fogo</li><li>Aceiro</li><li>Brigada</li></ol>
+      <ul class="ligar" id="a8-lista"></ul>
+      <div class="acoes"><button type="button" class="bt" data-conferir="a8">Conferir</button><span class="placar" id="a8-placar" aria-live="polite"></span></div>
+    </section>
+  </div>
+</div>
+
+<!-- 35 ATIVIDADE 9 -->
+<div class="page" data-parte="3" data-nome="Atividade 9">
+  <div class="pg">
+    <section class="ativ" data-ativ="9">
+      <h3 class="ativ__tit"><span>Atividade 9</span> Pode ou não pode?</h3>
+      <p>Marquem se cada atitude pode ou não pode. <b>Desafio:</b> para cada NÃO PODE, escrevam o que o Guardião deve fazer.</p>
+      <ol class="escolhas escolhas--curtas" id="a9-lista"></ol>
+      <textarea class="pauta" rows="3" data-salvar="a9-desafio" aria-label="O que o Guardião deve fazer"></textarea>
+      <p class="cred">Para conferir: Lei nº 9.985/2000, arts. 10 e 21; Lei nº 9.605/1998, arts. 29 e 42.</p>
+      <p class="placar" id="a9-placar" aria-live="polite"></p>
+    </section>
+  </div>
+</div>
+
+<!-- 36 REFERÊNCIAS -->
+<div class="page" data-nome="Referências" data-cap="Referências">
+  <div class="pg pg--rolagem">
+    <h2 class="tit-pag">Referências <small>fontes deste caderno</small></h2>
+    <ul class="refs">
+      <li>BRASIL. Lei nº 9.605, de 12 de fevereiro de 1998. Dispõe sobre as sanções penais e administrativas derivadas de condutas e atividades lesivas ao meio ambiente, e dá outras providências. Diário Oficial da União: seção 1, Brasília, DF, 13 fev. 1998. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/leis/l9605.htm" target="_blank" rel="noopener">planalto.gov.br</a>. Acesso em: 13 nov. 2026.</li>
+      <li>BRASIL. Lei nº 9.985, de 18 de julho de 2000. Regulamenta o art. 225, § 1º, incisos I, II, III e VII da Constituição Federal, institui o Sistema Nacional de Unidades de Conservação da Natureza e dá outras providências. Diário Oficial da União: seção 1, Brasília, DF, p. 1, 19 jul. 2000. Disponível em: <a href="https://www2.camara.leg.br/legin/indef/lei/2000/lei-9985-18-julho-2000-359708-publicacaooriginal-1-pl.html" target="_blank" rel="noopener">camara.leg.br</a>. Acesso em: 30 out. 2026.</li>
+      <li>BRASIL. Lei nº 12.305, de 2 de agosto de 2010. Institui a Política Nacional de Resíduos Sólidos; altera a Lei nº 9.605, de 12 de fevereiro de 1998; e dá outras providências. Diário Oficial da União: seção 1, Brasília, DF, 3 ago. 2010. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12305.htm" target="_blank" rel="noopener">planalto.gov.br</a>. Acesso em: 13 nov. 2026.</li>
+      <li>BRASIL. Lei nº 14.944, de 31 de julho de 2024. Institui a Política Nacional de Manejo Integrado do Fogo. Diário Oficial da União: seção 1, Brasília, DF, 1 ago. 2024. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14944.htm" target="_blank" rel="noopener">planalto.gov.br</a>. Acesso em: 13 nov. 2026.</li>
+      <li>FIBRACON CONSULTORIA, PERÍCIAS E PROJETOS AMBIENTAIS. Plano de Manejo da Reserva Particular do Patrimônio Natural Dona Aracy: Caiman, Pantanal. Campo Grande: FIBRAcon, ago. 2022.</li>
+      <li>FUNBIO. Fundo Brasileiro para a Biodiversidade. Fundação Neotrópica: Marechal Cândido Mariano Rondon REBIO. Programa GEF Terrestre. Disponível em: <a href="https://www.funbio.org.br/en/programas_e_projetos/gef-terrestre/fundacao-neotropica-marechal-candido-mariano-rondon-rebio/" target="_blank" rel="noopener">funbio.org.br</a>. Acesso em: 13 nov. 2026.</li>
+      <li>FUNDAÇÃO NEOTRÓPICA DO BRASIL. Guia fotográfico: aves do Mato Grosso do Sul. Fotografias de Breenda Rezende, Fernando de Almeida, Guilherme Dalponti, Jéssica Prestes e Meryelle Oliveira. [S. l.]: Fundação Neotrópica do Brasil, 2026. 1 arquivo PDF, 2 p.</li>
+      <li>IBGE. Instituto Brasileiro de Geografia e Estatística. Malha municipal 2025. Rio de Janeiro: IBGE, 2026. Disponível em: <a href="https://ibge.gov.br/geociencias/organizacao-do-territorio/estrutura-territorial/15774-malhas.html" target="_blank" rel="noopener">ibge.gov.br</a>. Acesso em: 30 out. 2026.</li>
+      <li>ICMBIO. Instituto Chico Mendes de Conservação da Biodiversidade. Manual de anilhamento de aves silvestres. Organização de Antonio Emanuel Barreto Alves de Sousa e Patrícia Pereira Serafini. 3. ed. rev. e ampl. Brasília: ICMBio/Cemave, 2020. Disponível em: <a href="https://repositorio.icmbio.gov.br/bitstream/cecav/1743/1/manual_de_anilhamento_de_aves_silvestres_3.pdf" target="_blank" rel="noopener">repositorio.icmbio.gov.br</a>. Acesso em: 13 nov. 2026.</li>
+      <li>IMASUL. Instituto de Meio Ambiente de Mato Grosso do Sul. Cadastro Estadual de Unidades de Conservação (CEUC): atualizado em 18/11/2025, conforme os índices ambientais definitivos para o biênio 2025/2026. Campo Grande: IMASUL, jan. 2026. Disponível em: <a href="https://www.imasul.ms.gov.br/wp-content/uploads/2026/01/Planilha-CEUC_atualizada-conf.-indices-definitivos.-2025_2026-01.2026.pdf" target="_blank" rel="noopener">imasul.ms.gov.br</a>. Acesso em: 30 out. 2026.</li>
+      <li>MITSUO, Rafael. PARNA do Juruena. 2024. 1 fotografia. Wikimedia Commons. Licença CC BY-SA 4.0. Disponível em: <a href="https://commons.wikimedia.org/wiki/File:PARNA_do_Juruena-Rafael_Mitsuo(001).jpg" target="_blank" rel="noopener">commons.wikimedia.org</a>. Acesso em: 3 nov. 2026.</li>
+      <li>NOVAENG. Projeto "Guardiões da Biodiversidade": Unidades de Conservação e Aves em Sala de Aula. Ficha técnica do projeto de Educação Ambiental de Miranda/MS. Campo Grande: NOVAeng, 2026.</li>
+      <li>OLIVEIRA, Aílton Carneiro de; KANEGAE, Mieko Ferreira; AMARAL, Marina Faria do; FAVARO, Fernando de Lima. Guia para observação das aves do Parque Nacional de Brasília. Brasília: ICMBio, 2011. Disponível em: <a href="https://www.gov.br/icmbio/pt-br/centrais-de-conteudo/publicacoes/guias-de-aves/guia-aves-pnb-completo.pdf" target="_blank" rel="noopener">gov.br/icmbio</a>. Acesso em: 13 nov. 2026.</li>
+      <li>PREFEITURA MUNICIPAL DE MIRANDA. Secretaria Municipal de Meio Ambiente e Recursos Hídricos. Campanha Miranda Sem Fogo: cartaz e folder. Miranda: SEMARH, 2026.</li>
+      <li>SEBASTIÃO, Airton Pereira. 3º Lugar: Ibama em Ação. 1 fotografia. Prevfogo/Ibama. Wikimedia Commons. Licença CC BY-SA 2.0. Disponível em: <a href="https://commons.wikimedia.org/wiki/File:3%C2%BA_Lugar_-_Ibama_em_A%C3%A7%C3%A3o_(53488586208).jpg" target="_blank" rel="noopener">commons.wikimedia.org</a>. Acesso em: 13 nov. 2026.</li>
+    </ul>
+    <p class="cred">Respostas das atividades: Caderno do Professor do projeto, NOVAeng (2026).</p>
+  </div>
+</div>
+
+<!-- 37 COMPROMISSO -->
+<div class="page" data-nome="Compromisso dos Guardiões" data-cap="Compromisso dos Guardiões">
+  <div class="pg pg--compromisso">
+    <div class="certificado">
+      <img src="assets/img/logo/logo-guardioes.webp" alt="" width="84" height="84">
+      <h2>Compromisso dos Guardiões da Biodiversidade</h2>
+      <p class="certificado__txt">Nós conhecemos as Unidades de Conservação de Miranda, entre elas a REBIO Marechal Cândido Mariano Rondon, e nos comprometemos a respeitar as áreas protegidas e a ajudar a cuidar da natureza de Miranda.</p>
+      <p class="certificado__rot">Assinaturas do grupo</p>
+      <label><span>1.</span><input type="text" class="mao" data-salvar="ass-1" autocomplete="off" aria-label="Assinatura 1"></label>
+      <label><span>2.</span><input type="text" class="mao" data-salvar="ass-2" autocomplete="off" aria-label="Assinatura 2"></label>
+      <label><span>3.</span><input type="text" class="mao" data-salvar="ass-3" autocomplete="off" aria-label="Assinatura 3"></label>
+      <label><span>4.</span><input type="text" class="mao" data-salvar="ass-4" autocomplete="off" aria-label="Assinatura 4"></label>
+      <label class="certificado__data"><span>Data</span><input type="text" class="mao" data-salvar="ass-data" placeholder="___/___/2026" autocomplete="off"></label>
+    </div>
+  </div>
+</div>
+
+<!-- 38 CONTRACAPA -->
+<div class="page pg-capa pg-capa--verso" data-density="hard" data-nome="Contracapa">
+  <div class="capa capa--verso">
+    <h2>Caderno dos Guardiões da Biodiversidade</h2>
+    <p class="capa__sub">Unidades de Conservação e aves de Miranda/MS, em sala de aula</p>
+    <div class="verso__grade">
+      <div><h3>A REBIO</h3><p>Reserva Biológica Municipal Marechal Cândido Mariano Rondon, UC de Proteção Integral criada pelo Decreto nº 2.636/2017, com 868,5 ha (IMASUL, 2026).</p></div>
+      <div><h3>A palestra</h3><p>Palestra em sala de aula em 16/11/2026 e atividade “Minha ave favorita” na aula de artes em 17/11/2026, com a galeria no mural da escola.</p></div>
+      <div><h3>As aves</h3><p>40 espécies do Guia Fotográfico Aves do Mato Grosso do Sul, da Fundação Neotrópica do Brasil, para conhecer e identificar.</p></div>
+      <div><h3>A turma</h3><p>7º ano da Escola Municipal Waldemar João de Souza, de Miranda, no projeto Guardiões da Biodiversidade.</p></div>
+    </div>
+    <div class="trio trio--redondo">
+      <img src="assets/img/aves/quero-quero.webp" alt="Quero-quero"><img src="assets/img/aves/gaviao-carijo.webp" alt="Gavião-carijó"><img src="assets/img/aves/gralha-picaca.webp" alt="Gralha-picaça">
+    </div>
+    <p class="capa__cred">Quero-quero, gavião-carijó e gralha-picaça. Fotos: Fundação Neotrópica do Brasil (2026). Guia Fotográfico Aves do Mato Grosso do Sul. Créditos fotográficos: Breenda Rezende, Fernando de Almeida, Guilherme Dalponti, Jéssica Prestes e Meryelle Oliveira.</p>
+    <a class="verso__link" href="index.html#memoria">Ver as fotos da palestra e da aula de artes →</a>
+  </div>
+</div>
+
+    </div>
+    <button type="button" class="seta seta--dir" id="prox" aria-label="Próxima página">›</button>
+  </div>
+
+  <nav class="rodape-livro" aria-label="Navegação do caderno">
+    <button type="button" class="bt-nav" id="ir-inicio" aria-label="Ir para a capa">⏮</button>
+    <button type="button" class="bt-nav" id="ant2" aria-label="Página anterior">‹ Voltar</button>
+    <span class="pagina" id="pagina" aria-live="polite">Capa</span>
+    <button type="button" class="bt-nav" id="prox2" aria-label="Próxima página">Avançar ›</button>
+    <button type="button" class="bt-nav bt-nav--perigo" id="limpar">Apagar respostas</button>
+    <a class="bt-nav bt-nav--sair" href="index.html">✕ Sair do caderno</a>
+  </nav>
+</main>
+
+<dialog class="gaveta" id="sumario" aria-labelledby="sum-tit">
+  <div class="gaveta__cab"><h2 id="sum-tit">Sumário</h2><button type="button" class="bt-fechar" id="fechar-sumario" aria-label="Fechar sumário">✕</button></div>
+  <ol class="gaveta__lista" id="lista-sumario"></ol>
+  <a class="gaveta__site" href="index.html">← Voltar ao site do projeto</a>
+</dialog>
+
+<dialog class="zoom-dlg" id="zoom-dlg" aria-label="Imagem ampliada">
+  <img id="zoom-img" src="" alt="">
+  <p id="zoom-leg"></p>
+  <button type="button" class="bt-fechar" id="zoom-fechar" aria-label="Fechar imagem">✕</button>
+</dialog>
+
+<script src="assets/js/aves.js"></script>
+<script src="assets/js/vendor/page-flip.js"></script>
+<script src="assets/js/caderno.js"></script>
+</body>
+</html>
