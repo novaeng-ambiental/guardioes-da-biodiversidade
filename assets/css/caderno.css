@@ -416,3 +416,11 @@ dialog { border: none; padding: 0; }
   .rodape-livro { gap: 6px; }
   .pagina { min-width: 0; flex: 1 1 100%; order: -1; }
 }
+
+/* jornada do Guardião (sem datas) */
+.jornada-cad { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5em; position: relative; }
+.jc { display: grid; gap: .25em; align-content: start; background: #fff; border: 1.5px solid var(--linha); border-top: 5px solid var(--p1); border-radius: 10px; padding: .55em .6em; font-size: .78em; line-height: 1.3; }
+.jc--2 { border-top-color: var(--p2); } .jc--3 { border-top-color: var(--p3); }
+.jc__n { width: 1.9em; height: 1.9em; border-radius: 50%; background: var(--p1); color: #fff; font-family: var(--f-tit); font-weight: 800; display: grid; place-items: center; font-size: 1.05em; }
+.jc--2 .jc__n { background: var(--p2); } .jc--3 .jc__n { background: var(--p3); }
+.jc b { font-family: var(--f-tit); font-size: 1.08em; line-height: 1.1; color: var(--tinta); }

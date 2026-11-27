@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Caderno dos Guardiões da Biodiversidade</title>
-<meta name="description" content="Caderno dos Guardiões da Biodiversidade em versão digital para folhear: o material da turma do 7º ano na palestra e na aula de artes em Miranda/MS.">
+<meta name="description" content="Caderno dos Guardiões da Biodiversidade em versão digital para folhear: um guia para qualquer pessoa conhecer as Unidades de Conservação e as aves de Miranda/MS, com atividades interativas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Caveat:wght@500;700&family=DM+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/css/caderno.css?v=20261126c">
+<link rel="stylesheet" href="assets/css/caderno.css?v=20261127a">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/img/logo/emblema-64.png">
 </head>
 <body>
@@ -38,7 +38,7 @@
 <!-- 1 CAPA -->
 <div class="page pg-capa" data-density="hard" data-nome="Capa">
   <div class="capa">
-    <p class="capa__selo">Miranda/MS · 7º ano</p>
+    <p class="capa__selo">Miranda/MS · Educação ambiental</p>
     <h1 class="capa__tit">Caderno dos Guardiões <span>da Biodiversidade</span></h1>
     <p class="capa__sub">Unidades de Conservação e aves de Miranda</p>
     <img class="capa__arte" src="assets/img/caderno/capa.webp" alt="Colagem com aves do Pantanal em círculos: tuiuiús na água ao centro e, em volta, tucano-toco, arara-azul, bem-te-vi, arara-vermelha, coruja-buraqueira e outras aves." width="1400" height="1313">
@@ -52,16 +52,16 @@
 <!-- 2 GRUPO -->
 <div class="page" data-nome="Este caderno pertence ao grupo">
   <div class="pg">
-    <h2 class="tit-pag">Este caderno <small>pertence ao grupo:</small></h2>
+    <h2 class="tit-pag">Este caderno <small>pertence a:</small></h2>
     <div class="ficha-grupo">
-      <label><span>Nome do grupo</span><input type="text" data-salvar="grupo-nome" class="mao" autocomplete="off"></label>
-      <p class="ficha-grupo__rot">Guardiões</p>
+      <label><span>Nome ou grupo</span><input type="text" data-salvar="grupo-nome" class="mao" autocomplete="off"></label>
+      <p class="ficha-grupo__rot">Guardiões (se for em grupo)</p>
       <label><span>1.</span><input type="text" data-salvar="grupo-g1" class="mao" autocomplete="off" aria-label="Guardião 1"></label>
       <label><span>2.</span><input type="text" data-salvar="grupo-g2" class="mao" autocomplete="off" aria-label="Guardião 2"></label>
       <label><span>3.</span><input type="text" data-salvar="grupo-g3" class="mao" autocomplete="off" aria-label="Guardião 3"></label>
       <label><span>4.</span><input type="text" data-salvar="grupo-g4" class="mao" autocomplete="off" aria-label="Guardião 4"></label>
-      <p><span>Escola</span><b>Escola Municipal Waldemar João de Souza</b></p>
-      <p><span>Turma</span><b>7º ano · período matutino</b></p>
+      <label><span>Escola</span><input type="text" data-salvar="grupo-escola" class="mao" autocomplete="off"></label>
+      <label><span>Turma</span><input type="text" data-salvar="grupo-turma" class="mao" autocomplete="off"></label>
       <label><span>Datas</span><input type="text" data-salvar="grupo-datas" class="mao" autocomplete="off"></label>
     </div>
     <p class="nota-salvo">O que vocês escrevem fica guardado só neste aparelho.</p>
@@ -122,8 +122,8 @@
 <div class="page" data-nome="Apresentação" data-cap="Apresentação">
   <div class="pg">
     <h2 class="tit-pag">Apresentação <small>para que serve este caderno?</small></h2>
-    <p class="balao">Este caderno vai acompanhar vocês na palestra e na aula de artes</p>
-    <p>Olá, Guardiões da Biodiversidade! Este caderno é de vocês. Ele vai acompanhá-los na palestra em sala de aula e na aula de artes, para conhecer as Unidades de Conservação e as aves de Miranda.</p>
+    <p class="balao">Este caderno é um guia para conhecer e cuidar das áreas protegidas e das aves de Miranda</p>
+    <p>Olá, Guardiões da Biodiversidade! Este caderno é de quem quiser usar: estudantes, professores, famílias e qualquer pessoa curiosa. Dá para usar sozinho, em grupo ou com a turma inteira, em sala de aula ou em casa.</p>
     <ul class="partes-lista">
       <li class="c1"><b>Parte 1. Unidades de Conservação de Miranda:</b> o que é uma UC, os tipos de UC, a REBIO e a RPPN Dona Aracy.</li>
       <li class="c2"><b>Parte 2. Aves de Miranda:</b> o papel das aves, como observar, como identificar uma ave pelas partes do corpo e a Galeria de aves.</li>
@@ -136,15 +136,17 @@
 <!-- 7 JORNADA + COMBINADOS -->
 <div class="page" data-nome="Jornada e combinados">
   <div class="pg">
-    <figure class="fig livre">
-      <img src="assets/img/caderno/jornada.webp" alt="A jornada do Guardião em três passos: 1, 16/11, em sala: palestra sobre Unidades de Conservação, a REBIO e as aves de Miranda; 2, 17/11, aula de artes: Minha ave favorita; 3, depois, na escola: Galeria dos Guardiões da Biodiversidade no mural da escola." class="zoom">
-      <figcaption><b>Figura 1. A jornada do Guardião: palestra, aula de artes e galeria</b> Elaboração: NOVAeng (2026).</figcaption>
-    </figure>
+    <div class="jornada-cad" role="figure" aria-label="A jornada do Guardião em três passos">
+      <div class="jc"><span class="jc__n">1</span><b>Conhecer para preservar</b><span>As Unidades de Conservação, a REBIO e as aves de Miranda, nas páginas deste caderno.</span></div>
+      <div class="jc jc--2"><span class="jc__n">2</span><b>Minha ave favorita</b><span>Escolham uma ave da galeria, desenhem e anotem três características dela.</span></div>
+      <div class="jc jc--3"><span class="jc__n">3</span><b>Galeria dos Guardiões</b><span>Mostrem os desenhos num mural, na escola, em casa ou onde todos possam ver.</span></div>
+    </div>
+    <p class="cred"><b>Figura 1. A jornada do Guardião.</b> Elaboração: NOVAeng (2026).</p>
     <div class="combinados">
       <img src="assets/img/caderno/icone-combinados.webp" alt="" width="64" height="64">
       <div>
         <h3>Combinados de Guardiões</h3>
-        <p>Guardiões da Biodiversidade cuidam da natureza em todo lugar: na escola, em casa e nas áreas protegidas, que têm regras próprias para proteger a natureza (Brasil, 2000). Por isso, na palestra e na aula de artes:</p>
+        <p>Guardiões da Biodiversidade cuidam da natureza em todo lugar: na escola, em casa e nas áreas protegidas, que têm regras próprias para proteger a natureza (Brasil, 2000). Por isso, em todas as atividades:</p>
         <ul class="caixinhas">
           <li><label><input type="checkbox" data-salvar="comb-1"><span>ouçam com atenção, levantem a mão e esperem a vez de cada colega falar;</span></label></li>
           <li><label><input type="checkbox" data-salvar="comb-2"><span>trabalhem juntos e ajudem os colegas: o caderno é do grupo, e todos participam;</span></label></li>
@@ -161,9 +163,9 @@
 <div class="page" data-nome="Atividade 1">
   <div class="pg">
     <section class="ativ" data-ativ="1">
-      <h3 class="ativ__tit"><span>Atividade 1</span> Combinado da turma</h3>
-      <p>Depois da conversa com a equipe do projeto, escrevam aqui mais um combinado que vocês acham importante para a palestra e a aula de artes:</p>
-      <textarea class="pauta" rows="6" data-salvar="a1" aria-label="Combinado da turma"></textarea>
+      <h3 class="ativ__tit"><span>Atividade 1</span> Meu combinado</h3>
+      <p>Escrevam aqui mais um combinado que vocês acham importante para cuidar da natureza:</p>
+      <textarea class="pauta" rows="6" data-salvar="a1" aria-label="Meu combinado"></textarea>
     </section>
     <img class="selo-ave" src="assets/img/aves/bem-te-vi.webp" alt="" aria-hidden="true">
   </div>
@@ -310,9 +312,9 @@
   <div class="pg">
     <section class="ativ" data-ativ="5">
       <h3 class="ativ__tit"><span>Atividade 5</span> Quem foi Marechal Rondon?</h3>
-      <p>A REBIO de Miranda leva o nome de Marechal Cândido Mariano Rondon, que vocês conheceram na palestra. Escrevam duas informações sobre ele que chamaram a atenção de vocês.</p>
+      <p>A REBIO de Miranda leva o nome de Marechal Cândido Mariano Rondon. Pesquisem sobre ele e escrevam duas informações que chamaram a atenção de vocês.</p>
       <textarea class="pauta" rows="7" data-salvar="a5" aria-label="Informações sobre Marechal Rondon"></textarea>
-      <details class="resp"><summary>Relembrar a palestra</summary>
+      <details class="resp"><summary>Para conferir</summary>
         <p>Rondon nasceu em 1865, em Mimoso, hoje Santo Antônio de Leverger (MT). De 1892 a 1915, construiu linhas de telégrafo de Cuiabá ao Araguaia e de Cuiabá a Corumbá e, com a Comissão Rondon, trabalhou na Amazônia. Em 1910, foi o primeiro diretor do Serviço de Proteção ao Índio. Tinha o lema “Morrer se preciso for, matar nunca”. Morreu em 1958, no Rio de Janeiro, e é o Patrono das Comunicações do Brasil.</p>
         <p>Em setembro de 1905, o então major Rondon mediu e demarcou a área da Vila de Miranda, o que hoje seria o perímetro urbano da cidade, e anotou croquis e cálculos na caderneta de campo, hoje guardada pela Agraer, em Campo Grande.</p>
         <p class="cred">Fontes: Biblioteca Nacional (2018), Guia de coleções da Divisão de Manuscritos, p. 409-410; Correios, Museu Correios: Marechal Rondon; Agraer (2016); Santos (2025).</p>
@@ -388,7 +390,7 @@
       <li><b>Procurem.</b> Olhem para o chão, para os galhos, para o alto das árvores, para a água e para o céu.</li>
       <li><b>Usem o binóculo, se tiverem.</b> Primeiro achem a ave a olho nu, sem tirar os olhos dela; depois levem o binóculo até os olhos.</li>
       <li><b>Anotem na hora.</b> Cor do bico, das asas e da cauda, tamanho, o que a ave fazia e onde estava.</li>
-      <li><b>Comparem.</b> Usem a Galeria de aves deste caderno e a ajuda do professor para descobrir o nome da ave.</li>
+      <li><b>Comparem.</b> Usem a Galeria de aves deste caderno e a ajuda de um professor ou de quem conhece aves para descobrir o nome da ave.</li>
     </ol>
     <p class="cred"><b>Figura 6. Os seis passos da observação de aves.</b> Elaboração: NOVAeng (2026).</p>
   </div>
@@ -435,7 +437,7 @@
 <div class="page" data-parte="2" data-nome="Galeria de aves" data-cap="Galeria de aves">
   <div class="pg">
     <h2 class="tit-pag">Galeria de aves <small>conheçam e marquem as que vocês já viram</small></h2>
-    <p class="gal-intro">As 40 aves estão no Guia Fotográfico Aves do Mato Grosso do Sul, da Fundação Neotrópica do Brasil. Usem as fotos na Atividade 7 e para escolher a ave da aula de artes. Marquem <b>V</b> se já viram e <b>O</b> se já ouviram a ave.</p>
+    <p class="gal-intro">As 40 aves estão no Guia Fotográfico Aves do Mato Grosso do Sul, da Fundação Neotrópica do Brasil. Usem as fotos na Atividade 7 e para escolher a sua ave favorita e desenhá-la. Marquem <b>V</b> se já viram e <b>O</b> se já ouviram a ave.</p>
     <p class="gal-cont" data-gal-cont></p>
     <ul class="gal" data-gal="0,8"></ul>
   </div>
@@ -553,7 +555,7 @@
       <label><span>2.</span><input type="text" class="mao" data-salvar="ass-2" autocomplete="off" aria-label="Assinatura 2"></label>
       <label><span>3.</span><input type="text" class="mao" data-salvar="ass-3" autocomplete="off" aria-label="Assinatura 3"></label>
       <label><span>4.</span><input type="text" class="mao" data-salvar="ass-4" autocomplete="off" aria-label="Assinatura 4"></label>
-      <label class="certificado__data"><span>Data</span><input type="text" class="mao" data-salvar="ass-data" placeholder="___/___/2026" autocomplete="off"></label>
+      <label class="certificado__data"><span>Data</span><input type="text" class="mao" data-salvar="ass-data" placeholder="___/___/______" autocomplete="off"></label>
     </div>
   </div>
 </div>
@@ -562,18 +564,18 @@
 <div class="page pg-capa pg-capa--verso" data-density="hard" data-nome="Contracapa">
   <div class="capa capa--verso">
     <h2>Caderno dos Guardiões da Biodiversidade</h2>
-    <p class="capa__sub">Unidades de Conservação e aves de Miranda/MS, em sala de aula</p>
+    <p class="capa__sub">Unidades de Conservação e aves de Miranda/MS</p>
     <div class="verso__grade">
       <div><h3>A REBIO</h3><p>Reserva Biológica Municipal Marechal Cândido Mariano Rondon, UC de Proteção Integral criada pelo Decreto nº 2.636/2017, com 868,5 ha (IMASUL, 2026).</p></div>
-      <div><h3>A palestra</h3><p>Palestra em sala de aula em 16/11/2026 e atividade “Minha ave favorita” na aula de artes em 17/11/2026, com a galeria no mural da escola.</p></div>
+      <div><h3>A jornada</h3><p>Conhecer as áreas protegidas, desenhar a ave favorita e montar a Galeria dos Guardiões num mural.</p></div>
       <div><h3>As aves</h3><p>40 espécies do Guia Fotográfico Aves do Mato Grosso do Sul, da Fundação Neotrópica do Brasil, para conhecer e identificar.</p></div>
-      <div><h3>A turma</h3><p>7º ano da Escola Municipal Waldemar João de Souza, de Miranda, no projeto Guardiões da Biodiversidade.</p></div>
+      <div><h3>Para quem</h3><p>Estudantes, professores, famílias e qualquer pessoa que queira conhecer e cuidar da natureza de Miranda.</p></div>
     </div>
     <div class="trio trio--redondo">
       <img src="assets/img/aves/quero-quero.webp" alt="Quero-quero"><img src="assets/img/aves/gaviao-carijo.webp" alt="Gavião-carijó"><img src="assets/img/aves/gralha-picaca.webp" alt="Gralha-picaça">
     </div>
     <p class="capa__cred">Quero-quero, gavião-carijó e gralha-picaça. Fotos: Fundação Neotrópica do Brasil (2026). Guia Fotográfico Aves do Mato Grosso do Sul. Créditos fotográficos: Breenda Rezende, Fernando de Almeida, Guilherme Dalponti, Jéssica Prestes e Meryelle Oliveira.</p>
-    <a class="verso__link" href="index.html#memoria">Ver as fotos da palestra e da aula de artes →</a>
+    <a class="verso__link" href="index.html">Conhecer o projeto Guardiões da Biodiversidade →</a>
   </div>
 </div>
 
@@ -605,6 +607,6 @@
 
 <script src="assets/js/aves.js?v=20261126c"></script>
 <script src="assets/js/vendor/page-flip.js?v=20261126c"></script>
-<script src="assets/js/caderno.js?v=20261126c"></script>
+<script src="assets/js/caderno.js?v=20261127a"></script>
 </body>
 </html>
