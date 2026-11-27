@@ -548,3 +548,4 @@ p { margin: 0; }
 .placar__txt { font-size: 1rem !important; line-height: 1.5 !important; }
 #jogo-voo .legenda-jogo b { font-family: var(--f-dado); color: var(--verde-txt); }
 @media (max-width: 480px) { .voo-ave i { display: none; } .voo-ave b { font-size: .74rem; } .voo-capa #voo-msg { font-size: .8rem; } .voo-curio { display: none; } }
+.objetivo { max-width: 70ch; font-size: clamp(1.05rem, 1.6vw, 1.25rem); line-height: 1.6; border-left: 5px solid var(--verde); padding: 4px 0 4px 20px; margin: 0 0 16px; }
